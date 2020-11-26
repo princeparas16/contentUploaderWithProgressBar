@@ -5,7 +5,7 @@
 ```bash
 git clone https://github.com/princeparas16/contentUploaderWithProgressBar.git
 
-cd contentUploader
+cd contentUploaderWithProgressBar
 ```
 
 We have 2 code base in this repository, 1 Client and 1 Server.
