@@ -13,13 +13,13 @@ app.use(express.json());
 app.use(cors());
 
 //CREATING POST ENDPOINT  /FILE
-app.post("/file", upload.single("file", (req, res) => {
-    console.log('body', req.file.length, req.file);
+app.post("/file", upload.single("file"), (req, res) => {
+  console.log("body", req.file.length, req.file);
 
-    res.json({success: true})
-}))
+  res.json({ success: true });  
+});
 
-app.listen(port, error => {
-    if(error) throw error
-    console.log(`Server up and running on port ${port}`);
-})
+app.listen(port, (error) => {
+  if (error) throw error;
+  console.log(`Server up and running on port ${port}`);
+});
